@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css?family=Francois+One|PT+Serif:400,400i,700,700i");
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none ; 
+  list-style: none;
+}
+:root{
+  --bg-color : #101113 ; 
+  --text-color : #fff ;
+  --main-color : #34e7f8 ;
+  --other-color : #fcfcfc;
+  --h1-font : 6rem ; 
+  --p-font : 1rem ;
+}
+
+
+body{
+  background-color: black;
+  color: var(--text-color);
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 8%;
+  transition: all .55s ease;
+  background: transparent;
+
+}
+
+.logo{
+display: flex;
+align-items: center;
+color: var(--text-color);
+font-size: 28px;
+font-weight: bold;
+margin-left: 60px;
+margin-top: 40px;
+
+}
+
+.logo i{
+  color: var(--main-color);
+  font-size: 32px;
+  margin-right: 5px;
+  
+}
+
+.navbar{
+  display: flex;
+  padding: 0px;
+  margin-left: 400px;
+  margin-top: -20px;
+}
+
+.navbar a{
+  color:  var(--other-color);
+ font-size: var(--p-font); 
+ font-weight: 500;
+ margin: 0 50px;
+ transition: all .55s ease;
+ 
+}
+
+.navbar a:hover{
+  color: var(--main-color);
+}
+
+.navbar a.active{
+  color: var(--main-color);
+}
+
+.header-icons{
+  display: flex;
+  align-items: center;
+}
+
+#menu-icon{
+  font-size: 35px;
+  color: var(--text-color);
+  z-index: 10001;
+  cursor: pointer;
+}
+
+.header-icons i {
+  margin-left: 25px;
+  font-size: 28px;
+  cursor: pointer;
+  transition: all .55s ease;
+}
+
+.header-icons i:hover{
+  transform: translateY(-5px);
+  color: var(--main-color);
+}
+
+section{
+  padding: 0 40%;
+  margin-top: 100px;
+  
+  
+}
+
+.home{
+  
+  position: relative;
+  height: 100vh;
+  width: 18%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 2rem ;
+  left: -20px;
+
+}
+    
+.home-text h1 {
+
+  font-size: var(--h1-font);
+  line-height: 1.2;
+  margin-bottom: 0px;
+  left: -50px;
+  
+
+}
+
+.home-text h5{
+  color: #ffffff99;
+  font-size: 20px;
+  font-weight: 40px;
+  margin-bottom: 60px;
+  
+  
+}
+
+.home-text h3{
+  font-size: 40px;
+  font-weight: 700px;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
+
+}
+
+.btn{
+  display: inline-block;
+  padding: 15px 70px;
+  font-size: 10px;
+  font-weight: 500px;
+  background: transparent;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  transition: all .55s ease;
+}
+
+.btn:hover{
+  background: var(--text-color);
+  border: 2px solid var(--text-color);
+  color: #000 ;
+}
+
+.home-img img{
+  max-width: 20%;
+}
+
+.main{
+  position: absolute;
+  top: 66%;
+  left: 20%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  
+}
+
+.main li img{
+  width: 60px;
+  height: auto;
+  max-width: 100% ;
+  
+}
+ 
+.row{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--main-color);
+  transition: all .55s ease;
+  cursor: pointer;
+}
+
+.row:hover{
+  transform: translateY(-8px);
+}
+
+
+.row2{
+  background: #ff758d;
+}
+
+.row3{
+  background: #ffd06d;
+}
+
+.bottom{
+  position: absolute;
+  bottom: 350px;
+  right: 8%;
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 500px;
+}
+
+.bottom i{
+  color: var(--main-color);
+  font-size: 60px;
+  margin-left: 50px;
+  margin-top: 5px;
+  transition: all .55s ease;
+}
+
+.bottom i:hover{
+  transform: translateY(-8px);
+}
+
+.card-item-price{
+  
+  font-size: 30px;
+  font-weight: bold;
+  color:green
+}
+.card-item-cat{
+  
+  font-size: 30px;
+  font-weight: bold;
+  color:rgb(0, 6, 128)
+}
+
+.cart-list {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 1rem;
+  margin-top: 3%;
+}
+
+
+.cart-item:hover{
+  
+  color :rgb(245, 241, 241);
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.cart-item span {
+  
+  font-weight: bold;
+  padding: 50px;
+}
+
+
+/* Assuming your existing styling */
+
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  background-color: #000;
+  margin-left: -500px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  width: 120%;
+  
+}
+
+.cart-item span {
+  font-weight: bold;
+  margin-right: 10px;
+  
+}
+
+.cart-list-button {
+  
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-top: 50px;
+  
+}
+
+.cart-list-button:hover {
+  background-color: #d32f2f;
+  
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 10px;
+  
+}
+
+button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  
+}
+
+button:hover {
+  background-color: #001122;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: -500px;
+}
+
+h6 {
+  font-size: 20px;
+margin-block: 50px;  
+}
+
+h4{
+  margin-left: -500px;
+  font-size: 40px;
+  margin-top: 30px;
+  margin-block: 50px;
+}
+
+.two{
+  margin-top: 6000px;
+}
+
+
+/* Style for the form container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Style for text fields */
+.MuiTextField-root {
+  width: 100%;
+}
+
+/* Style for the Add button */
+.add-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+/* Center the form vertically */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.home-text h1 {
+  font-size: 40px; /* Adjust the font size */
+  font-weight: bold; /* Set font weight if needed */
+}/* app.css */
+
+.one {
+  max-width: 160%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* app.css */
+
+/* Add space between each home item */
+.home-item {
+  margin-bottom: 200px; /* Adjust this value as needed */
+}
+
+/* Style for the home section */
+.home {
+
+  flex-wrap: wrap;
+  gap: 2px; /* Add space between rows and columns */
+}
+
+/* Style for each home item */
+.home-text {
+  background-color: #000000;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add more styles for home-img, h1, img, h5, h6, and buttons as needed */
+
+css
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+.add-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+
+.add-button:hover {
+  background-color: #3e8e41;
+
+}
+
+
+.add{
+  display: inline-block;
+  padding: 15px 70px;
+  font-size: 10px;
+  font-weight: 500px;
+  background: transparent;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  transition: all .55s ease;
+  margin-left: 1200px;
+  margin:20x;
+}
+
+.add{
+  background: var(--text-color);
+  border: 2px solid var(--text-color);
+  color: #000 ;
+}

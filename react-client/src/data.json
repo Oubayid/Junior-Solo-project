@@ -1,0 +1,23 @@
+[
+   {
+      "name": "Mogo Mg-24",
+      "description" : "The smarter way to play",
+      "price": "100£",
+      "imageUrl": "https://images.unsplash.com/photo-1616296425622-4560a2ad83de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Z2FtaW5nJTIwbW91c2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80" 
+   },
+   {
+      "name": "RAZER  X" ,
+      "description" : "The smarter way to play",
+      "price": "300£",
+      "imageUrl": "https://assets2.razerzone.com/pages/barracuda-x-4c578898e8144ee8da21dde32b7a9f5f/barracuda-x_render-right.jpg"
+   },
+   {
+      "name": "SteelSeries Arctis Nova",
+      "description" : "The smarter way to play",
+      "price": "200£",
+      "imageUrl": "https://media.wired.com/photos/62979b5afff4774f503be99a/master/w_2560%2Cc_limit/Arctis-Nova-Pro-Gear.jpg" 
+   }
+
+
+]
+
